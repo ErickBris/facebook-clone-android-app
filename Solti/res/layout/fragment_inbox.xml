@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$DummySectionFragment"
+    android:background="@color/feed_bg" >
+
+    <LinearLayout
+        android:id="@+id/btnShare"
+        android:layout_width="match_parent"	
+        android:layout_height="wrap_content"
+ 		android:visibility="invisible"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:layout_marginBottom="@dimen/feed_item_margin"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+ 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right" >
+
+        </LinearLayout>
+	
+       
+
+    </LinearLayout>
+    <ProgressBar
+       android:id="@+id/pb"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       
+       />
+
+   <android.support.v4.widget.SwipeRefreshLayout
+       android:id="@+id/swipelayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/tableRow1"
+       android:layout_alignParentTop="true" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tableRow1"
+        android:layout_alignParentTop="true" />
+</android.support.v4.widget.SwipeRefreshLayout>
+
+   <TableRow
+       android:id="@+id/tableRow1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:gravity="center_horizontal"
+       android:background="#dbdbdb"
+       
+        >
+
+       <Button
+           android:id="@+id/WriteBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:background="@drawable/write_button"
+           android:paddingLeft="5dp"
+           android:paddingRight="5dp" />
+
+       <Button
+           android:id="@+id/PhotoBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:background="@drawable/camera_button"
+           android:paddingLeft="5dp"
+           android:paddingRight="5dp" />
+
+   </TableRow>
+
+</RelativeLayout>

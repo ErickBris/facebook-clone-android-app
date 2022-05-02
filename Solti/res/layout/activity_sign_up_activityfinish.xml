@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/signup_bg" >
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/confirmpasswordField"
+        android:layout_below="@+id/confirmpasswordField"
+        android:layout_marginTop="91dp"
+        android:background="@drawable/login_button"
+        android:text="Next >"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/confirmpasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignLeft="@+id/passwordField"
+        android:layout_below="@+id/passwordField"
+        android:background="@drawable/login_editrext_bg"
+        android:ems="10"
+        android:hint="@string/confirmPassHint"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/lnField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fnField"
+        android:background="@drawable/login_editrext_bg"
+        android:ems="10"
+        android:hint="@string/lastName"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lnField"
+        android:layout_below="@+id/lnField"
+        android:background="@drawable/login_editrext_bg"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailField"
+        android:layout_below="@+id/emailField"
+        android:background="@drawable/login_editrext_bg"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fnField"
+        android:layout_centerHorizontal="true" >
+    </TableRow>
+
+    <ImageView
+        android:id="@+id/editProfileImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_screen_app_name" />
+
+    <TextView
+        android:id="@+id/totalfollower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editProfileImg"
+        android:layout_centerHorizontal="true"
+        android:text="Create an Account"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/fnField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/totalfollower"
+        android:background="@drawable/login_editrext_bg"
+        android:ems="10"
+        android:hint="@string/firstName"
+        android:paddingLeft="10dp" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

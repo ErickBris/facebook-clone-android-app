@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/imageAndStuffs"
+        android:layout_width="match_parent"	
+        android:layout_height="wrap_content"
+ 
+        android:orientation="vertical"
+        >
+ 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+ 
+            <ImageView
+                android:id="@+id/profilePicInComments"
+                android:layout_width="@dimen/feed_item_profile_pic"
+                android:layout_height="@dimen/feed_item_profile_pic"
+                android:scaleType="fitCenter" />
+            
+ 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+ 
+                <TextView
+                    android:id="@+id/nameInComments"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textStyle="bold" />
+ 
+                <TextView
+                    android:id="@+id/timestampInComments"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/timestamp"
+                    android:textSize="@dimen/feed_item_timestamp" />
+            </LinearLayout>
+        </LinearLayout>
+ 
+        <TextView
+            android:id="@+id/txtStatusMsgInComments"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:paddingTop="@dimen/feed_item_status_pad_top" />
+ 
+        
+ 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+           
+            android:visibility="visible" />
+
+        <TableRow 
+            android:id="@+id/tblLayoutInComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+
+
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center|center_vertical"
+                android:background="@drawable/feed_lin_bg"
+                >
+
+            <TextView
+                android:id="@+id/numLikeInComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/feed_item_text_color"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <ImageView
+                android:id="@+id/likeIconInComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like" />
+            </LinearLayout>
+
+            
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/feed_lin_bg"
+                >
+            <TextView
+                android:id="@+id/numCommentsInComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:textColor="@color/feed_item_text_color"
+                android:textAppearance="?android:attr/textAppearanceMedium"  />
+            <ImageView
+                android:id="@+id/comIconInComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_comments" />
+            </LinearLayout>
+            
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/feed_lin_bg"
+                >
+           
+            <ImageView
+                android:id="@+id/shareIconInComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share" />
+            </LinearLayout>
+
+        </TableRow>
+
+    </LinearLayout>
+
+</LinearLayout>

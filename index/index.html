@@ -1,0 +1,339 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	
+	<style type="text/css" media="screen">
+	
+	.ImageBorder {
+  /* Thickness, Style, and Color */
+  border: 3px solid #ffffff;
+}
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		
+		
+		body {
+    -webkit-animation: mymove 20s infinite; /* Chrome, Opera, and Safari */
+    animation: mymove 20s infinite; /* Standard syntax */
+    background-color: #ffffff;
+}
+
+	
+	</style>
+	
+	
+	
+</head>
+
+
+<body text="red" >
+
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Solti&rdquo; Documentation by &ldquo;Ivan&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;SOLTI&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 23/7/2015<br>
+					By: Green Eye<br>
+					Email: Ivan Kolarov <a href="mailto:youremail@yourdomain.com">kolorav.ivan@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Hello There! Thanks for Purchasing my app’s source code. Here I will provide you instruction to setup the app correctly so that it is ready to publish. So be ready.Feel free to email via my user page contact form <a href="http://codecanyon.net/user/greenye">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">Getting</a></li>
+			<li><a href="#cssFiles">Set Up Backend</a></li>
+			<li><a href="#javascript">Enable Google Play Services</a></li>
+			<li><a href="#psdFiles">Enable Push notification</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) Getting Started</strong> - <a href="#toc">top</a></h3>
+		
+		<p>
+    First copy the provided Solti.zip file into the desktop and extract files there
+</p>
+<p>
+    <img width="759" height="404" src="Images/1.PNG" class="ImageBorder"alt="1.PNG"/>
+</p>
+<p>
+    Now Open eclipse and Import Solti project from the desktop
+</p>
+<p>
+    <img width="759" height="404" src="Images/2.PNG" class="ImageBorder"alt="2.PNG"/>
+</p>
+<p>
+    <img width="759" height="404" src="Images/3.PNG" class="ImageBorder"alt="3.PNG"/>
+</p>
+<p>
+    Also import google-play-services-lib project to your workspace
+</p>
+<p>
+    <img width="759" height="404" src="Images/4.PNG" class="ImageBorder"alt="4.PNG"/>
+</p>
+<p>
+    Now right click on Solti Project and click on properties. Go to the android tab.
+</p>
+<p>
+    <img width="759" height="404" src="Images/5.PNG" class="ImageBorder"alt="5.PNG"/>
+</p>
+<p>
+    Remove the existing library and add new one
+</p>
+<p>
+    <img width="565" height="280" src="Images/6.PNG" class="ImageBorder"alt="6.PNG"/>
+</p>
+<p>
+    And click Apply
+</p>
+<p>
+    <img width="551" height="304" src="Images/9.PNG" class="ImageBorder"alt="9.PNG"/>
+</p>
+		
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) Set Up Backend</strong> - <a href="#toc">top</a></h3>
+
+		<p>
+    Our application uses parse.com for its backend data storage and retrieval which is free and efficient to use. You need to setup parse account in order to
+    use its Features.
+</p>
+<p>
+    Go to <a href="http://parse.com/">http://parse.com/</a>
+</p>
+<p>
+    <img border="0" width="759" height="376" src="Images/10.PNG"class="ImageBorder" alt="10.PNG"/>
+</p>
+<p>
+    If you already have an account then you can skip these steps. If you haven’t you have to sign Up. Click on Sign Up button
+</p>
+<p>
+    <img border="0" width="758" height="345" src="Images/12.PNG"class="ImageBorder" alt="12.PNG"/>
+</p>
+<p>
+    After successfully signing up, you are now on Quick start page. Follow the following steps
+</p>
+<p>
+    <img border="0" width="759" height="341" src="Images/13.PNG" class="ImageBorder"alt="13.PNG"/>
+</p>
+<p>
+    <img border="0" width="687" height="302" src="Images/14.PNG" class="ImageBorder"alt="14.PNG"/>
+</p>
+<p>
+    <img border="0" width="759" height="345" src="Images/15.PNG" class="ImageBorder"alt="15.PNG"/>
+</p>
+<p>
+    <img border="0" width="759" height="342" src="Images/16.PNG"/>" alt="16.PNG"/>
+</p>
+<p>
+    <img border="0" width="758" height="343" src="Images/17.PNG" class="ImageBorder"alt="17.PNG"/>
+</p>
+<p>
+    After completing above steps you now have client id. You need this id to use parse services of your account.
+</p>
+<p>
+    <img border="0" width="759" height="180" src="Images/18.PNG" class="ImageBorder"alt="18.PNG"/>
+</p>
+<p>
+    Copy the client id
+</p>
+<p>
+    Go to your project . src&gt;&gt;com.ansoft.solti&gt;&gt;Solti.java&gt;&gt;
+</p>
+<p>
+    Paste it on the highlighted line;
+</p>
+<p>
+    <img border="0" width="759" height="404" src="Images/19.PNG" class="ImageBorder"alt="19.PNG"/>
+</p>
+<p>
+    If you have changed the package name so far. You need to change it in the manifest too. To do so, read following instructions.
+</p>
+<p>
+    <img border="0" width="759" height="261" src="Images/21.PNG" class="ImageBorder"alt="21.PNG"/>
+</p>
+<p>
+    <img border="0" width="759" height="261" src="Images/22.PNG" class="ImageBorder"alt="22.PNG"/>
+</p>
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) Enable Google Play Services</strong> - <a href="#toc">top</a></h3>
+		
+		<p>
+    Our app uses google map to display people on the radar. So we need google api key in order to use their services. Now go to the following website and login
+    with your gmail account
+</p>
+<p>
+    <a href="https://console.developers.google.com/">https://console.developers.google.com/</a>
+</p>
+<p>
+    <img border="0" width="759" height="402" src="Images/23.PNG" class="ImageBorder"alt="23.PNG"/>
+</p>
+<p>
+    Create new project
+</p>
+<p>
+    <img border="0" width="539" height="488" src="Images/25.PNG" class="ImageBorder"alt="25.PNG"/>
+</p>
+<p>
+    Name your project
+</p>
+<p>
+    <img border="0" width="495" height="222" src="Images/26.PNG" class="ImageBorder"alt="26.PNG"/>
+</p>
+<p>
+    After successful project creation you will be directed to following page
+</p>
+<p>
+    <img border="0" width="759" height="364" src="Images/27.PNG" class="ImageBorder"alt="27.PNG"/>
+</p>
+<p>
+    Now enable google map api
+</p>
+<p>
+    <img border="0" width="758" height="335" src="Images/28.PNG" class="ImageBorder"alt="28.PNG"/>
+</p>
+<p>
+    <img border="0" width="441" height="190" src="Images/29.PNG" class="ImageBorder"alt="29.PNG"/>
+</p>
+<p>
+    Now goto credential page and lets create new client id
+</p>
+<p>
+    <img border="0" width="726" height="456" src="Images/30.PNG" class="ImageBorder"alt="30.PNG"/>
+</p>
+<p>
+    Select installed application
+</p>
+<p>
+    <img border="0" width="500" height="338" src="Images/31.PNG" class="ImageBorder"alt="31.PNG"/>
+</p>
+<p>
+    <img border="0" width="759" height="378" src="Images/32.PNG" class="ImageBorder"alt="32.PNG"/>
+</p>
+<p>
+    Now we need to enter our app’s SHA1 key. Go to eclipse and click preferences.
+</p>
+<p>
+    <img border="0" width="758" height="504" src="Images/33.PNG" class="ImageBorder"alt="33.PNG"/>
+</p>
+<p>
+    <img border="0" width="758" height="365" src="Images/34.PNG" class="ImageBorder"alt="34.PNG"/>
+</p>
+<p>
+    Copy SHA1 fingerprint and paste it below
+</p>
+<p>
+    <img border="0" width="555" height="551" src="Images/36.PNG" class="ImageBorder"alt="36.PNG"/>
+</p>
+<p>
+    Now you have created your client Id
+</p>
+<p>
+    <img border="0" width="758" height="388" src="Images/37.PNG" class="ImageBorder"alt="37.PNG"/>
+</p>
+<p>
+    Click create new key and choose android key
+</p>
+<p>
+    <img border="0" width="758" height="400" src="Images/38.PNG" class="ImageBorder"alt="38.PNG"/>
+</p>
+<p>
+    Now again you have to enter your app’s package name and SHA1 fingerprint
+</p>
+<p>
+    <img border="0" width="659" height="467" src="Images/39.PNG" class="ImageBorder"alt="39.PNG"/>
+</p>
+<p>
+    Enter it and click create
+</p>
+<p>
+    <img border="0" width="667" height="471" src="Images/40.PNG" class="ImageBorder"alt="40.PNG"/>
+</p>
+<p>
+    You have successfully created the api key. Copy it.
+</p>
+<p>
+    <img border="0" width="643" height="175" src="Images/41.PNG" class="ImageBorder"alt="41.PNG"/>
+</p>
+<p>
+    Now Goto project manifest file and paste it right there
+</p>
+<p>
+    <img border="0" width="759" height="367" src="Images/42.PNG" class="ImageBorder"alt="42.PNG"/>
+</p>
+		
+		<hr>
+		
+		<h3 id="psdFiles"><strong>D) Enable Push notification </strong> - <a href="#toc">top</a></h3>
+		
+		<p>
+    Now one last task to do. Our app uses push notification service from parse. So we need to enable it first. Now goto parse.com and goto my apps. And under
+    project name click on push.
+</p>
+<p>
+    <img width="759" height="323" src="Images/43.PNG" class="ImageBorder"alt="43.PNG"/>
+</p>
+<p>
+    Now
+</p>
+<p>
+    1.Goto setting
+</p>
+<p>
+    2.Click Push
+</p>
+<p>
+    3.Enable client push enabled
+</p>
+<p>
+    DONE
+</p>
+<p>
+    <img width="758" height="222" src="Images/45.PNG" class="ImageBorder"alt="45.PNG"/>
+</p>
+<p>
+    And that’s it. You have successfully setup your app. You can easily run your app now. If you have any issue you can contact me on my skype. My skype id is
+    ivan.kolarov39.
+</p>
+<p>
+    Also I am available for freelancing I can add many features to your app for a very good price. You can contact me whenever you want.
+</p>
+<p>
+    GOOD LUCK
+</p>
+		
+		
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		
+	</div><!-- end div .container -->
+</body>
+</html>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+    android:orientation="vertical" 
+    >
+ 
+    <LinearLayout
+        android:id="@+id/notifylin"
+        android:layout_width="match_parent"	
+        android:layout_height="wrap_content"
+ 		android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+       
+        android:background="@color/white"
+        android:orientation="vertical"
+         >
+ 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+ 
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="@dimen/feed_item_profile_pic"
+                android:layout_height="@dimen/feed_item_profile_pic"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_profile"
+                 />
+            
+ 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+ 
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notification Message"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textStyle="bold" />
+ 
+                <TextView
+                    android:id="@+id/timestamp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/timestamp"
+                    android:textSize="@dimen/feed_item_timestamp" 
+                    android:text="2 hour ago"
+                    />
+                
+                
+            </LinearLayout>
+        </LinearLayout>
+ 
+        
+
+        
+
+    </LinearLayout>
+ 
+</LinearLayout>

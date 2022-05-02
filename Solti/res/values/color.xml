@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="action_bar_bg_color">#f4f4f4</color>
+    <color name="app_parent_color">#0b6ab4</color> 
+    <color name="pressed_state_secondary_color">#f1f1f1</color> 
+    <color name="swipe1">#6cbdfb</color>  
+    <color name="swipe2">#1277c4</color> 
+    <color name="swipe3">#07426f</color> 
+    <color name="swipe4">#6cbdfb</color> 
+    <color name="placeholder_color1">#4c4c4c</color>
+    <color name="placeholder_color2">#3d6380</color>
+    <color name="placeholder_color3">#45262b</color>
+    <color name="placeholder_color4">#6c8f64</color>
+    <color name="placeholder_color5">#683b7a</color>
+    <color name="placeholder_color6">#cd897d</color>
+    <color name="tab_bg_color">#1972b7</color>
+    <color name="feed_item_text_color">#0d4e81</color>
+    <color name="feed_linBtn_bg_color">#97d2ff</color>
+    <color name="feed_sharedByBgColor">#0d3f65</color>
+    
+    <color name="actionbar">#3cb879</color>
+    <color name="body_background">#e8e8e8</color>
+    <color name="body_background_green">#82e783</color>
+    <color name="server_status_bar">#2b2b2b</color>
+    <color name="title_gray">#434343</color>
+    
+    <color name="bg_msg_you">#5eb964</color>
+    <color name="bg_msg_from">#e5e7eb</color>
+    <color name="msg_border_color">#a1a1a1</color>
+    <color name="bg_btn_join">#1e6258</color>
+    <color name="bg_msg_input">#e8e8e8</color>
+    <color name="text_msg_input">#626262</color>
+    <color name="lblFromName">#777777</color>
+    <color name="chatscreenbg">#f6f1e9</color>
+    
+     <color name="timestamp_alternate_color">#606060</color>
+     <color name="statusmsg_alternate_color">#181818</color>
+     
+</resources>

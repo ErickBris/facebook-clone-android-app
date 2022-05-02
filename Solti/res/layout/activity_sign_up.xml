@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_bg"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp" >
+
+    <TextView
+        android:id="@+id/fullNameInOwnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/profileImg"
+        android:text="Please enter your valid mobile number"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/phField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fullNameInOwnProfile"
+        android:background="@drawable/login_editrext_bg"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/unField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/phField"
+        android:background="@drawable/login_editrext_bg"
+        android:ems="10"
+        android:hint="@string/username_hint"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/userNameInOwnProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Choose profile Photo"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/profileImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/userNameInOwnProfile"
+        android:src="@drawable/profle_image" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unField"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/unField"
+        android:layout_below="@+id/radioGroup1"
+        android:background="@drawable/login_button"
+        android:text="Register"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

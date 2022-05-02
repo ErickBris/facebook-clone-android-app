@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context="com.ansoft.solti.ShowProfile" >
+    
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lin"
+        android:layout_below="@+id/lin"
+        android:text="FullName"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fullname"
+        android:layout_below="@+id/fullname"
+        android:text="username"
+        android:textSize="20dp" />
+
+   
+
+    
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cover_photo" />
+
+    <LinearLayout 
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        
+        >
+
+        <ImageView
+            android1:id="@+id/profileImage"
+            android1:layout_width="100dp"
+            android1:layout_height="100dp"
+            android1:src="@drawable/profile_mage_placeholder" />
+
+    </LinearLayout>
+
+    <TextView
+        android1:id="@+id/totalfollower"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/username"
+        android1:layout_below="@+id/username"
+        android1:text="21"
+        android1:textAppearance="?android:attr/textAppearanceLarge"
+        android1:textColor="#2f2e2e" />
+
+    <TextView
+        android1:id="@+id/followerstext"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/totalfollower"
+        android1:layout_alignBottom="@+id/totalfollower"
+        android1:layout_toRightOf="@+id/totalfollower"
+        android1:text="Followers"
+        android1:textAppearance="?android:attr/textAppearanceMedium"
+        android1:textColor="#5b5b5b" />
+
+    <TextView
+        android1:id="@+id/totalfollowing"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBottom="@+id/followerstext"
+        android1:layout_centerHorizontal="true"
+        android1:text="45"
+        android1:textAppearance="?android:attr/textAppearanceLarge"
+        android1:textColor="#2f2e2e" />
+
+    <TextView
+        android1:id="@+id/followingstext"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBottom="@+id/totalfollowing"
+        android1:layout_toRightOf="@+id/totalfollowing"
+        android1:text="Followings"
+        android1:textAppearance="?android:attr/textAppearanceMedium"
+        android1:textColor="#5b5b5b" />
+
+    <ListView
+        android1:id="@+id/listPro"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_below="@+id/followerstext" >
+    </ListView>
+
+    <ImageButton
+        android1:id="@+id/remvbtn"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_above="@+id/followingstext"
+        android1:layout_alignParentRight="true"
+        android1:layout_marginRight="3dp"
+        android1:background="@drawable/unfollow_button"
+        android1:padding="2dp"
+        android1:visibility="gone" />
+
+    <ImageButton
+        android1:id="@+id/addbtn"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_above="@+id/remvbtn"
+        android1:layout_alignParentRight="true"
+        android1:layout_marginRight="3dp"
+        android1:background="@drawable/follow_button"
+        android1:visibility="gone" />
+
+    <ImageView
+        android1:id="@+id/following_text"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentRight="true"
+        android1:layout_below="@+id/lin"
+        android1:layout_marginRight="3dp"
+        android1:paddingLeft="3dp"
+        android1:paddingRight="3dp"
+        android1:src="@drawable/following_icon"
+        android1:visibility="gone" />
+
+    <ProgressBar
+        android1:id="@+id/pb"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_below="@+id/totalfollowing"
+         />
+
+    <TextView
+        android1:id="@+id/nopostyet"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/totalfollower"
+        android1:layout_below="@+id/followerstext"
+        android1:text="This user hasn&apos;t posted anything yet"
+        android1:visibility="gone" />
+
+</RelativeLayout>
